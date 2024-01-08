@@ -17,7 +17,10 @@ export default function Document() {
         />
 
         {/* Usado para integrar stitches ao SSR */}
-        <style id="stitches" dangerouslySetInnerHTML={{ __html: getCssText }} />
+        <style
+          id="stitches"
+          dangerouslySetInnerHTML={{ __html: getCssText() }}
+        />
       </Head>
       <body>
         <Main />
